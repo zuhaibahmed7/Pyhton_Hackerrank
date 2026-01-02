@@ -1,0 +1,12 @@
+import textwrap
+
+def wrap(string, max_width):
+    return textwrap.fill(string, width = max_width)
+    
+    
+    #textwrap module breaks the text into multiple lines which follow the max length given or width
+
+if __name__ == '__main__':
+    string, max_width = input(), int(input())
+    result = wrap(string, max_width)
+    print(result)
