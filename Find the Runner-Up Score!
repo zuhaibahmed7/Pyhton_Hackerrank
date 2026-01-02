@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    updated_list = list(set(arr))
+    updated_list = sorted(updated_list)
+    
+    # could write above as ---> updated_list.sort()
+    print(updated_list[-2])
