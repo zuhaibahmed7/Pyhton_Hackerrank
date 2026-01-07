@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+from collections import Counter
+
+X = int(input())        #No of shoes
+
+size = list(map(int, input().split()))      #Size of shoes
+
+N = int(input())        #No of customers
+total_sum = 0
+size_and_price =[]
+
+for _ in range(1, N+1):
+    size_and_price = list(map(int, input().split()))
+    if size_and_price[0] in size:
+        indx = size.index(size_and_price[0])
+        total_sum+=int(size_and_price[1])
+        size.pop(indx)
+        
+print(total_sum)
+
