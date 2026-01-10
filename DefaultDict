@@ -1,0 +1,23 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+
+from collections import defaultdict
+
+# Read n and m
+n, m = map(int, input().split())
+
+# Create a defaultdict with list as default factory
+positions = defaultdict(list)
+
+# Read the words in group A and record their positions
+for i in range(1, n + 1):
+    word = input().strip()
+    positions[word].append(i)
+
+# For each word in group B, print positions or -1
+for _ in range(m):
+    query_word = input().strip()
+    if positions[query_word]:
+        print(*positions[query_word])
+    else:
+        print(-1)
