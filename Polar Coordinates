@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import math
+import cmath
+
+z = complex(input())
+angle = cmath.phase(z)
+
+# print(angle)   # in radians
+
+print(math.sqrt(z.real**2+z.imag**2))
+print(angle)
