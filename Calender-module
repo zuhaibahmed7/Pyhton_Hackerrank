@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+import datetime
+space_separated_data = input() 
+
+# or we can write  
+# month, day, year = map(int, input.split())
+
+month, day, year = map(int, space_separated_data.split())
+date_obj = datetime.date(year, month, day) 
+
+# datetime.date()   ----> require the arguments in this order(year-> month-> day) 
+
+print(date_obj.strftime("%A").upper())
+
+#strftime("%A")
+#strftime----> convert the string object into the string format 
+#("%A") ----> extracts just day from the date.
+
