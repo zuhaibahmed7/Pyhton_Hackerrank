@@ -1,0 +1,15 @@
+from collections import namedtuple
+
+N = int(input())
+fields = input().split()
+
+Student = namedtuple('Student', fields)
+
+total_marks = 0
+
+for _ in range(N):
+    data = input().split()
+    student = Student(*data)
+    total_marks += int(student.MARKS)
+
+print(round(total_marks / N, 2))
