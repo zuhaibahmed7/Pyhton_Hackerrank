@@ -1,0 +1,12 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+N = int(input())
+s = set()
+for _ in range (N):
+    name = input()
+    s.add(name)
+
+print(len(s))
+    
+    
+    
