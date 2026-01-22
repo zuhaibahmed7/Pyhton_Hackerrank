@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOU
+
+n = int(input())
+roll_numbers = set(map(int,input().split())) 
+sbs_nmbr = int(input())
+subsribe_rollNo = set(map(int, input().split()))
+
+uni = roll_numbers | subsribe_rollNo
+print(len(uni))
+
+ 
