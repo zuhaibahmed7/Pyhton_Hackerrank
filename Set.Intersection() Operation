@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+english_subscribers = int(input())
+lst_enlish = set(map(int, input().split()))
+french_subscribers = int(input())
+lst_french = set(map(int, input().split()))
+
+print(len(lst_enlish.intersection(lst_french)))
+
+
+
