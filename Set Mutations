@@ -1,0 +1,21 @@
+
+
+A = int(input())
+N = set((map(int, input().split())))
+
+for _ in range(int(input())):
+    op = input().split()
+    command = op[0]
+    B = set(map(int, input().split()))
+    if command == "intersection_update":
+        N.intersection_update(B)
+    elif command == "difference_update":
+        N.difference_update(B)
+    elif command == "symmetric_difference_update":
+        N.symmetric_difference_update(B)
+    elif command == "update":
+        N.update(B)
+
+print(sum(N))
+    
+    
