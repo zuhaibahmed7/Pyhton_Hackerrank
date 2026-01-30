@@ -1,0 +1,11 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+def is_palindrome(n):
+    return str(n) == str(n)[::-1]
+N = int(input())
+lst = list(map(int, input().split()))
+cond1 = all(i>0 for i in lst)
+cond2 = any(str(i) == str(i)[::-1] for i in lst)
+print(cond1 and cond2)
+
+        
+
