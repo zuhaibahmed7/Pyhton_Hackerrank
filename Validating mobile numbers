@@ -1,0 +1,8 @@
+import re
+regex_pattern = r"^(?:\+91[\s]?)?[7-9]\d{9}$"
+N = int(input())
+for _ in range(N):
+    if re.match(regex_pattern, input()):
+        print("YES")
+    else:
+        print("NO")
