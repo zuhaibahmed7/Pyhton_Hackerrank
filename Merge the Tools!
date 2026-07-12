@@ -1,0 +1,16 @@
+def merge_the_tools(string, k):
+    # your code goes here
+    n = len(string)
+    j = 0
+    for _ in range(n//k):   
+        uni_subse = ""
+        for _ in range(k):
+            if string[j] not in uni_subse:
+                uni_subse += string[j]
+            j+=1
+        print(uni_subse)
+        
+
+if __name__ == '__main__':
+    string, k = input(), int(input())
+    merge_the_tools(string, k)
