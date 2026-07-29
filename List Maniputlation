@@ -1,0 +1,11 @@
+def list_manipulation(N):
+    lst = []
+    for _ in range(N):
+         name = input("Enter the fruit name: ")
+         lst.append(name)
+    print(lst)
+    lst.pop(1)
+    print(lst)
+
+list_manipulation(5)
+    
