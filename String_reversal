@@ -1,0 +1,10 @@
+def string_reversal(str):
+    return str[::-1]
+
+def string_reversal2(str, n):
+    while(n>=0):
+        print(str[n], end = "")
+        n -=1
+    
+print(string_reversal("Python"))
+string_reversal2("Python", len("Python")-1)
