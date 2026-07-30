@@ -1,0 +1,8 @@
+def Vowel_Frequency_Counter(sentence):
+    vowels = "aeiou"
+    sentence = sentence.lower()
+    count = 0
+    for i in sentence:
+        if i in vowels:
+            count+=1
+    return count
