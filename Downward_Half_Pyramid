@@ -6,4 +6,15 @@ def  Downward_Half_Pyramid(N):
         print()
         
 Downward_Half_Pyramid(5)
+
+
+
+# using single loop
+def  Downward_Half_Pyramid(N):
+    while(N>=0):
+        print( N * " * ")
+        N -= 1
+        
+Downward_Half_Pyramid(5)
+    
     
