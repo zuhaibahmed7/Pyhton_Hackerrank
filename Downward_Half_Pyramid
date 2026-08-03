@@ -1,0 +1,9 @@
+def  Downward_Half_Pyramid(N):
+    while(N>=0):
+        for i in range(N):
+            print("*", end = " ")
+        N -= 1
+        print()
+        
+Downward_Half_Pyramid(5)
+    
