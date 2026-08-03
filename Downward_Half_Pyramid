@@ -10,11 +10,24 @@ Downward_Half_Pyramid(5)
 
 
 # using single loop
+
 def  Downward_Half_Pyramid(N):
     while(N>=0):
         print( N * " * ")
         N -= 1
         
 Downward_Half_Pyramid(5)
+
+
+# using step method in the for single loop:
+
+def  Downward_Half_Pyramid(N):
+    for  i in range(N, 0, -1):
+        print( i * " * ")
+        
+        
+Downward_Half_Pyramid(5)
+    
+
     
     
