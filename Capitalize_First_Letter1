@@ -1,0 +1,14 @@
+# Without using the title()
+
+def Capitalize_First_Letter1(txt):
+    result = ""
+    for i in range(len(txt)):
+        if i == 0 or txt[i-1] == " ":
+            result += txt[i].upper() 
+        else:
+            result += txt[i]
+    return result
+
+tt = "hello world from python"
+new_String = Capitalize_First_Letter1(tt)
+print(new_String)
