@@ -1,0 +1,7 @@
+def Word_Length_Analysis(str):
+    for word in str:
+        print(f"{word} - {len(word)}", end = " ")
+
+words = ["Apple", "Banana", "Cherry", "Date", "Elderberry"]
+Word_Length_Analysis(words)
+print()
