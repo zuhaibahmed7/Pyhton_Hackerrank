@@ -1,0 +1,3 @@
+orig = "I love coding in Python"
+new_String = orig.replace(" ", "_")
+print(new_String)
