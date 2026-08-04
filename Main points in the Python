@@ -1,0 +1,7 @@
+                    #    Main points in the Python
+
+
+merge the dictionaries -------> use the union operator |
+If we want to convert the string in the list of word just write the ----------> stringname.split()
+string obejct does not support the item assignment like this means you cannot modify a string by index --------->    txt[i] = txt[i].upper()
+
