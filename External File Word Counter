@@ -1,0 +1,5 @@
+with open("newFile.txt", "r") as file:
+    content = file.read()
+    print(content)
+    words = content.split()
+    print(f"Total number of words in newFile.txt: file are {len(words)}")
