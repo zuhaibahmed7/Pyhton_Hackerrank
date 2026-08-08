@@ -1,0 +1,5 @@
+# This is the loop Else Clause -------> used in search loops
+for i in range(5):
+    print(i)
+else:
+    print("Done:")
