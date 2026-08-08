@@ -1,0 +1,14 @@
+def Display_numbers(N):
+    while(N>=0):
+        print(N, end = " ")
+        N-=1
+
+def Display_numbers2(N):
+    for i in range(N, 0, 1):
+        print(i, end = " ")
+        
+print()
+Display_numbers(10)
+print()
+Display_numbers2(-10)
+print()
